@@ -3,71 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Сумки ручной работы</title>
+  <meta name="description" content="Маленькие сумки ручной работы из натуральных материалов с доставкой по России. Уникальные модели и внимательное отношение к деталям.">
+  <title>Маленькие сумки ручной работы</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Хедер -->
+  <!-- Основной шапочный блок сайта -->
   <header>
-    <h1>Маленькие сумки ручной работы</h1>
-    <nav>
-      <a href="#about">О нас</a>
-      <a href="#gallery">Галерея</a>
-      <a href="#features">Особенности</a>
-      <a href="#contacts">Контакты</a>
-    </nav>
+    <div class="header-inner">
+      <h1>Маленькие сумки ручной работы</h1>
+      <nav aria-label="Главное меню">
+        <ul class="site-navigation">
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#gallery">Галерея</a></li>
+          <li><a href="#features">Особенности</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- О нас -->
-  <section id="about">
-    <h2>О нас</h2>
-    <p>Каждая сумка создаётся вручную с любовью к деталям. Мы используем натуральные материалы и вдохновляемся природой и городом.</p>
-  </section>
+  <!-- Основное содержимое страницы -->
+  <main>
+    <!-- О нас: блок с описанием компании -->
+    <section id="about">
+      <h2>О нас</h2>
+      <p>Каждая сумка создаётся вручную с любовью к деталям. Мы используем натуральные материалы и вдохновляемся природой и городом.</p>
+    </section>
 
-  <!-- Галерея -->
-  <section id="gallery">
-    <h2>Наши сумки</h2>
-    <div class="gallery">
-      <div class="item">
-        <img src="bag1.jpg" alt="Мягкая бархатная сумка глубокого серо‑синего оттенка лежит на деревянной поверхности, словно спрятанный талисман. Её верх собран в изящные складки, стянутые тонкими шнурами, а сбоку играет белая лента, придавая образу лёгкую небрежность. На лицевой стороне мерцают красные блёстки надписи — будто тайное послание, зашифрованное в искрах. Сумка выглядит как вещица с характером: простая и в то же время загадочная, будто хранит в себе маленькую историю.">
-        <p>Сумка «Лето» — 2500 ₽</p>
+    <!-- Галерея продукции: карточки товаров -->
+    <section id="gallery">
+      <h2>Наши сумки</h2>
+      <div class="gallery">
+        <article class="gallery-item">
+          <figure>
+            <img src="bag1.jpg" alt="Сумка «Лето» из бархата серо-синего цвета" loading="lazy">
+            <figcaption>Сумка «Лето» — 2500 ₽</figcaption>
+          </figure>
+        </article>
+
+        <article class="gallery-item">
+          <figure>
+            <img src="bag2.jpg" alt="Сумка «Город» с асимметричным дизайном" loading="lazy">
+            <figcaption>Сумка «Город» — 2700 ₽</figcaption>
+          </figure>
+        </article>
+
+        <article class="gallery-item">
+          <figure>
+            <img src="bag3.jpg" alt="Сумка «Минимал» в спокойной цветовой гамме" loading="lazy">
+            <figcaption>Сумка «Минимал» — 2300 ₽</figcaption>
+          </figure>
+        </article>
       </div>
-      <div class="item">
-        <img src="bag2.jpg" alt="Сумка 2">
-        <p>Сумка «Город» — 2700 ₽</p>
-      </div>
-      <div class="item">
-        <img src="bag3.jpg" alt="Сумка 3">
-        <p>Сумка «Минимал» — 2300 ₽</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Особенности -->
-  <section id="features">
-    <h2>Почему выбирают нас</h2>
-    <ul>
-      <li>100% ручная работа</li>
-      <li>Натуральные материалы</li>
-      <li>Уникальный дизайн</li>
-      <li>Доставка по всей России</li>
-    </ul>
-  </section>
+    <!-- Особенности: преимущества покупки у нас -->
+    <section id="features">
+      <h2>Почему выбирают нас</h2>
+      <ul>
+        <li>100% ручная работа</li>
+        <li>Натуральные материалы</li>
+        <li>Уникальный дизайн</li>
+        <li>Доставка по всей России</li>
+      </ul>
+    </section>
 
-  <!-- Контакты -->
-  <section id="contacts">
-    <h2>Свяжитесь с нами</h2>
-    <form>
-      <input type="text" placeholder="Ваше имя" required>
-      <input type="email" placeholder="Ваш email" required>
-      <textarea placeholder="Сообщение"></textarea>
-      <button type="submit">Отправить</button>
-    </form>
-    <p>Email: info@mysmallbags.ru</p>
-    <p>Instagram: @mysmallbags</p>
-  </section>
+    <!-- Контакты: форма обратной связи и контакты -->
+    <section id="contacts">
+      <h2>Свяжитесь с нами</h2>
+      <form action="#" method="post" aria-describedby="contact-note">
+        <div class="form-field">
+          <label for="contact-name">Ваше имя</label>
+          <input id="contact-name" name="name" type="text" placeholder="Имя" required>
+        </div>
+        <div class="form-field">
+          <label for="contact-email">Ваш email</label>
+          <input id="contact-email" name="email" type="email" placeholder="email@example.com" required>
+        </div>
+        <div class="form-field">
+          <label for="contact-message">Сообщение</label>
+          <textarea id="contact-message" name="message" placeholder="Напишите ваше сообщение" rows="4"></textarea>
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+      <p id="contact-note">Мы отвечаем в течение 1-2 рабочих дней.</p>
+      <address>
+        <p>Email: <a href="mailto:info@mysmallbags.ru">info@mysmallbags.ru</a></p>
+        <p>Instagram: <a href="https://instagram.com/mysmallbags" target="_blank" rel="noopener noreferrer">@mysmallbags</a></p>
+      </address>
+    </section>
+  </main>
 
-  <!-- Футер -->
+  <!-- Нижний колонтитул -->
   <footer>
     <p>© 2025 Маленькие сумки ручной работы</p>
   </footer>
