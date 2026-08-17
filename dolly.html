@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Маленькие сумки ручной работы из натуральных материалов с доставкой по России. Уникальные модели и внимательное отношение к деталям.">
   <title>Маленькие сумки ручной работы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Основной шапочный блок сайта -->
   <header>
     <div class="header-inner">
-      <h1>Маленькие сумки ручной работы</h1>
+      <h1>Dolly · сумки ручной работы</h1>
       <nav aria-label="Главное меню">
         <ul class="site-navigation">
           <li><a href="#about">О нас</a></li>
@@ -25,34 +27,44 @@
 
   <!-- Основное содержимое страницы -->
   <main>
+    <!-- Hero: крупное фото работы и вступительный текст -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Сумка, которая одна такая на свете</h2>
+        <p>Шью каждую сумку сама, вручную — от выкройки до последней бисеринки в вышивке. Ни один узор не повторяется дважды.</p>
+        <a class="hero-cta" href="#gallery">Смотреть работы</a>
+      </div>
+    </section>
+
     <!-- О нас: блок с описанием компании -->
     <section id="about">
       <h2>О нас</h2>
-      <p>Каждая сумка создаётся вручную с любовью к деталям. Мы используем натуральные материалы и вдохновляемся природой и городом.</p>
+      <p>Каждая сумка создаётся вручную с любовью к деталям — от подбора ткани до последней бисеринки в вышивке. Мы используем натуральные материалы и вдохновляемся природой и городом.</p>
     </section>
 
     <!-- Галерея продукции: карточки товаров -->
     <section id="gallery">
-      <h2>Наши сумки</h2>
+      <h2>Наши работы</h2>
+      <p class="section-lead">Три готовые сумки ручной работы — каждая в единственном экземпляре.</p>
       <div class="gallery">
         <article class="gallery-item">
           <figure>
-            <img src="bag1.jpg" alt="Сумка «Лето» из бархата серо-синего цвета" loading="lazy">
-            <figcaption>Сумка «Лето» — 2500 ₽</figcaption>
+            <img src="image/багет.jpg" alt="Клатч-багет из светлого бархата с вышивкой бисером в виде лебедя" loading="lazy">
+            <figcaption><strong>Клатч «Лебедь»</strong><span>Багет, бархат, вышивка бисером</span></figcaption>
           </figure>
         </article>
 
         <article class="gallery-item">
           <figure>
-            <img src="bag2.jpg" alt="Сумка «Город» с асимметричным дизайном" loading="lazy">
-            <figcaption>Сумка «Город» — 2700 ₽</figcaption>
+            <img src="image/мешочек.jpg" alt="Бархатный мешочек-торба серо-голубого цвета с вышивкой бисером" loading="lazy">
+            <figcaption><strong>Мешочек-торба</strong><span>Бархат, вышивка бисером</span></figcaption>
           </figure>
         </article>
 
         <article class="gallery-item">
           <figure>
-            <img src="bag3.jpg" alt="Сумка «Минимал» в спокойной цветовой гамме" loading="lazy">
-            <figcaption>Сумка «Минимал» — 2300 ₽</figcaption>
+            <img src="image/Шоппер.jpg" alt="Текстильный шоппер с цветочным принтом и птицами" loading="lazy">
+            <figcaption><strong>Шоппер «Птицы и цветы»</strong><span>Плотный хлопок, принт</span></figcaption>
           </figure>
         </article>
       </div>
@@ -61,7 +73,7 @@
     <!-- Особенности: преимущества покупки у нас -->
     <section id="features">
       <h2>Почему выбирают нас</h2>
-      <ul>
+      <ul class="features-grid">
         <li>100% ручная работа</li>
         <li>Натуральные материалы</li>
         <li>Уникальный дизайн</li>
@@ -89,15 +101,17 @@
       </form>
       <p id="contact-note">Мы отвечаем в течение 1-2 рабочих дней.</p>
       <address>
-        <p>Email: <a href="mailto:info@mysmallbags.ru">info@mysmallbags.ru</a></p>
-        <p>Instagram: <a href="https://instagram.com/mysmallbags" target="_blank" rel="noopener noreferrer">@mysmallbags</a></p>
+        <ul class="social-links">
+          <li><a href="mailto:info@mysmallbags.ru">Email</a></li>
+          <li><a href="https://instagram.com/mysmallbags" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        </ul>
       </address>
     </section>
   </main>
 
   <!-- Нижний колонтитул -->
   <footer>
-    <p>© 2025 Маленькие сумки ручной работы</p>
+    <p>© 2025 Dolly — сумки ручной работы</p>
   </footer>
 </body>
 </html>
